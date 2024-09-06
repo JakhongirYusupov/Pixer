@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: none;
+  outline: none;
 }
 
 body {
@@ -21,7 +22,15 @@ body {
   text-align: center;
 }
 
-.customText {
+.customMinTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.customText,
+::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -33,14 +42,10 @@ body {
   padding: 8px 16px;
   background: #00BAFC;
   border-radius: 5px;
-  cursor: pointer;
-
-  a {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 24px;
-    color: #FFFFFF;
-  }
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 .header {
@@ -168,6 +173,93 @@ body {
             height: 130px;
           }
         }
+      }
+    }
+
+    .aboutus {
+      padding: 56px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .about_desc {
+        width: 100%;
+        max-width: 720px;
+      }
+
+      .about_list {
+        display: grid;
+        padding: 24px 0 48px;
+        gap: 48px;
+
+        .about_item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 34px;
+
+          .about_item_img>img {
+            width: 300px;
+          }
+
+          .about_item_desc {
+            max-width: 500px;
+
+            p {
+              padding-top: 8px;
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 56px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #00BAFC;
+
+  .footer_wrapper {
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .order_desc {
+      width: 100%;
+      max-width: 720px;
+
+      h3,
+      p {
+        color: #FFFFFF;
+      }
+    }
+
+    .order_form {
+      width: 100%;
+      max-width: 348px;
+      padding: 24px;
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+
+      input,
+      select {
+        width: 100%;
+        padding: 16px;
+        border-radius: 5px;
+        background-color: #F3F3F3;
       }
     }
   }
